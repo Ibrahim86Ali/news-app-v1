@@ -12,13 +12,13 @@ const DateOptions = {
 export function SideList() {
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:5010/articles?order=DESC")
+      .get("http://127.0.0.1:5010/articles")
       .then((res) => setData(res.data.data))
       .catch((err) => console.log(err));
   }, []);
 
   const [data, setData] = useState([]);
-  const LocalFliter = data.filter((item) => item.category.name === "انتوربين");
+  const LocalFliter = data.filter((item) => item.category.name === "بروكسل");
 
   return (
     <>

@@ -42,7 +42,7 @@ function Navbar() {
               </svg>
             </button>
           </div>
-          {/*Search BAR */}
+          {/*  desktop view */}
           <Weather />
           <ul className=" hidden md:flex  m-1 z-1 space-x-2 p-2 ps-4">
             <a href={`/ReadArticleByCat/${"SPORT"}`} className="links">
@@ -51,30 +51,17 @@ function Navbar() {
             <a href={`/ReadArticleByCat/${"SPORT"}`} className="links">
               {CITY.AR2}
             </a>
-            <a href={`/ReadArticleByCat/${"SPORT"}`} className="links">
+            <a href={`/ReadArticleByCat/${"بروكسل"}`} className="links">
               {CITY.AR1}
             </a>
-            <a href={`/ReadArticleByCat/${"LOCAL"}`} className="links">
-              {PROVINCE.AR2}
-            </a>
-            <a
-              href={`/ReadArticleByCat/${"4e4b563f-8fe6-45f3-bd17-b14cbdebab50"}`}
-              className="links"
-            >
-              {PROVINCE.AR1}
-            </a>
-            <a
-              href={`/ReadArticleByCat/${"d1e83468-949e-4fe4-b4cf-aa46e8b54e1c"}`}
-              className="links"
-            >
-              {BELGUIM.AR}
-            </a>
+
             <a href={`/`} className="links">
               {MAIN.AR}
             </a>
           </ul>
           <div className=" logo  "> العربي بلجيكا </div>
         </div>
+        {/*mobile view */}
         {isOpen ? (
           <div className=" absolute z-10 h-screen  flex flex-col w-content p-6 text-left md:hidden bg-red-700 ">
             <ul className=" flex flex-col m-1 z-10 space-x-2 p-2 ps-4">

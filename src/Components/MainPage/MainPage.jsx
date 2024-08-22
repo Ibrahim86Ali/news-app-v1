@@ -41,6 +41,7 @@ export default function MainPageTest() {
         )
       ) : (
         <>
+          <SideList />
           <p className=" text-lg w-40 bg-red-600 text-white p-4 ml-0 mb-0 mt-4">
             اخبار متنوعه
           </p>
