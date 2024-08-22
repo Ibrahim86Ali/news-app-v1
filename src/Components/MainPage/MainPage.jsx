@@ -1,17 +1,6 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
+import { React, useState, useEffect } from "react";
 import { SideList } from "../SideList/SideList";
 import { ImgView } from "../ImgView/ImgView";
-import PropTypes from "prop-types";
-import React from "react";
-
-const DateOptions = {
-  weekday: "long",
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-};
 
 export default function MainPageTest() {
   //states
@@ -48,9 +37,7 @@ export default function MainPageTest() {
           <hr className="h-2 mb-2 bg-red-600 border-0 "></hr>
           <div>
             {data.map((item) => (
-              <div key={item.id}>
-                <img style={{ height: 400, width: 200 }} alt="" />
-              </div>
+              <ImgView key={item.id} {...item} />
             ))}
           </div>
         </>
